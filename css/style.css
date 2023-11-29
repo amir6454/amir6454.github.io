@@ -1,0 +1,166 @@
+/*
+================
+add fonts
+================
+*/
+@import url(fontiran.css);
+/*
+
+================
+default style
+================
+*/
+body {
+    font-family: IRANSans !important;
+    font-weight: 300;
+    direction: rtl;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+/*
+================
+css reset
+================
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*
+================
+variables
+================
+*/
+:root{
+    --clr-orang:#f26522;
+    --clr-gray1:#8e8e8e;
+    --clr-gray2:#4d4d4d;
+    --clr-black:#000000;
+    --clr-white:#ffffff;
+    --radius:10px;
+    
+}
+
+/*
+================
+global style
+================
+*/
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+
+.container{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.pricing-table{
+    background: var(--clr-gray1);
+    border-radius: var(--radius);
+    text-align: center;
+    margin: 1%;
+    position: relative;
+    color: #fff;
+    border: 1px solid var(--clr-white);
+    margin-bottom: 10%;
+    padding-top: 20px;
+    min-height: 500px;
+    line-height: 2;
+}
+@media screen and (min-width: 568px)
+{
+    .pricing-table{
+        float:right;
+        width: 48%;
+       
+        
+    }
+}
+@media screen and (min-width: 1000px)
+{
+    .pricing-table{
+        float:right;
+        width: 23%;
+    }
+    .small-text{
+        font-size: 11px;
+    }
+}
+  
+.pt-title-box{
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: -6%;
+    background: var(--clr-orang);
+    border-radius: var(--radius);
+    color: var(--clr-black);
+    height: 50px;
+}
+.pt-pricing-box{
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 0;
+    background: var(--clr-gray2);
+    color: var(--clr-white);
+    
+    border-radius: var(--radius);
+    margin-bottom: 10px;
+    height: 40px;
+}
+.small-text{
+    position: absolute;
+    right: 0;
+    rotate: 30deg;
+    color: var(--clr-white);
+}
+
+.pt-title-box h2{
+    
+    text-shadow: 1px 1px 2px var(--clr-white) ;
+    
+}
+
+
+
+/*body*/
+.menu{
+    text-align: center;
+}
+a{
+    color: #fff;
+    padding:10px;
+    background: blue;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+a:hover{
+    background-color: #4b4bff;
+}
+.info-box{
+    text-align: center;
+    padding: 10px;
+    background: #ffd2ff;
+}
+.info-box p{
+    text-align: justify;
+    line-height: 2;
+}
+.info-box2{
+    padding: 10px;
+}
